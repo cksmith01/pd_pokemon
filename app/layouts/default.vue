@@ -1,7 +1,10 @@
+<script setup>
+import 'primeicons/primeicons.css';
+</script>
 <template>
-    <AppNavbar />
+    <Navbar />
     <main class="container">
         <slot />
     </main>
-    <AppFooter />
+    <Footer />
 </template>

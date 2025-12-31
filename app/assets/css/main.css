@@ -1,6 +1,6 @@
 body {
     background-color: #708090;
-    color: white;
+    color: #eee;
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -9,7 +9,8 @@ body {
 }
 
 footer {
-    height: .8rem;
+    height: 1rem;
+    max-height: 100px;
 }
 
 footer p {
@@ -31,9 +32,9 @@ article {
 .container {
     clear: both;
     padding: 5px;
-    background-color: #fff;
+    background-color: #eee;
     color: black;
-    height: 85vh;
+    height: 90vh;
     overflow-y: auto;
 }
 
@@ -47,13 +48,13 @@ article {
 .loader {
     margin: 50px;
     width: fit-content;
-    height: 20px;
+    height: 22px;
     font-weight: bold;
-    padding: 2px 20px 2px 20px;
+    padding: 2px 20px;
     font-size: 16px;
-    background: linear-gradient(90deg, #eee 50%, #fff 0) right/200% 100%;
+    background: linear-gradient(90deg, #ddd 50%, #fff 0) right/200% 100%;
     animation: l21 2s infinite linear;
-    border: 1px #eee solid;
+    border: 1px #ddd solid;
     border-radius: 6px;
 }
 
@@ -135,7 +136,7 @@ article {
     margin: 5px;
     /* width: 500px; */
     border-radius: 5px;
-    background-color: #eee;
+    background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
     text-align: center;
 }
@@ -156,6 +157,11 @@ article {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
+
 .m-5 {
     margin: 5px;
 }
@@ -164,7 +170,19 @@ article {
     padding: 5px;
 }
 
-/* ADJUSTMENTS FOR SMALLER SCREENS */
+.pr-5 {
+    padding-right: 5px;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.float-left {
+    float: left;
+}
+
+/* ADJUSTMENTS COLUMNS FOR SMALLER SCREENS */
 
 @media (max-width: 1200px) {
 
@@ -187,17 +205,16 @@ article {
     .pokeCard {
         display: grid;
         padding: 2px;
-        margin: 2px;
         /* width: 500px; */
         border-radius: 5px;
-        background-color: #eee;
+        background-color: #fff;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
         text-align: center;
     }
 
 }
 
-@media (max-width: 555px) {
+@media (max-width: 565px) {
 
     .pokeGrid {
         display: grid;
