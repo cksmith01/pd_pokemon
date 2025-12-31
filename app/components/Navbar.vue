@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
 
 const icon = ref('');
 icon.value = '/favicon.ico';
@@ -13,13 +16,13 @@ icon.value = '/favicon.ico';
         </div>
         <nav>
             <ul>
-                <li>
+                <li :class="route.name === 'index' ? 'navbarItemActive' : ''">
                     <NuxtLink :to="{ name: 'index' }">
                         <i class="pi pi-home"></i>
                         Home
                     </NuxtLink>
                 </li>
-                <li>
+                <li :class="route.name === 'about' ? 'navbarItemActive' : ''">
                     <NuxtLink :to="{ name: 'about' }">
                         <i class="pi pi-info-circle"></i>
                         About

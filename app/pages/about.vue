@@ -8,7 +8,6 @@
         <div class="todo">
             <h3>To Do:</h3>
             <ul>
-                <li>nav bar highlighting for the page you're on</li>
                 <li>add some other properties to display on the detail page</li>
                 <li>make the whole card clickable</li>
                 <li>what about a different page that uses PrimeVue grid and modal to display the data</li>

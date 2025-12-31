@@ -114,6 +114,12 @@ article {
     color: white;
 }
 
+.navbarItemActive {
+    background-color: #576676;
+    color: white;
+    border-radius: 5px;
+}
+
 .logo {
     width: 150px;
     float: left;
