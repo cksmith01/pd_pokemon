@@ -52,12 +52,6 @@ onMounted(async () => {
     margin: 5px;
 }
 
-/*
-img {
-    transform: scale(.80);
-}
-*/
-
 .data-container {
     padding: 20px;
     margin-bottom: 20px;

@@ -12,7 +12,6 @@ const filtered = computed(() =>
         p.name.toLowerCase().startsWith(search.value.toLowerCase())
     )
 );
-
 </script>
 
 <template>
@@ -28,7 +27,7 @@ const filtered = computed(() =>
     <div v-if="status === 'pending'" class="loader"></div>
     <div v-else-if="error" class="error">{{ error.statusMessage }}</div>
     <div v-else class="clear-both pokeGrid">
-        <div v-for="poke in filtered"" :key="poke.id" :id="poke.id" class="clear-both pokeCard center">
+        <div v-for="poke in filtered" :key="poke.id" :id="poke.id" class="clear-both pokeCard center">
             <Card :poke="poke" />
         </div>
     </div>

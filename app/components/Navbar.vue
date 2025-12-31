@@ -1,5 +1,13 @@
+<script setup>
+import { ref } from 'vue';
+
+const icon = ref('');
+icon.value = '/favicon.ico';
+
+</script>
 <template>
     <div class="navbar">
+        <img :src="icon" />
         <div class="logo">
             PD Pokemon
         </div>
