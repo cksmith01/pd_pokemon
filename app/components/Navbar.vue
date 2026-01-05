@@ -1,25 +1,27 @@
 <script setup>
-import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
 
-const icon = ref('');
-icon.value = '/favicon.ico';
-
 </script>
 <template>
-    <div class="navbar">
-        <img :src="icon" />
+    <header class="navbar">
         <div class="logo">
             PD Pokemon
         </div>
+        <img src="/favicon.ico" />
         <nav>
             <ul>
                 <li :class="route.name === 'index' ? 'navbarItemActive' : ''">
                     <NuxtLink :to="{ name: 'index' }">
                         <i class="pi pi-home"></i>
                         Home
+                    </NuxtLink>
+                </li>
+                <li :class="route.name === 'prime' ? 'navbarItemActive' : ''">
+                    <NuxtLink :to="{ name: 'prime' }">
+                        <i class="pi pi-table"></i>
+                        Prime
                     </NuxtLink>
                 </li>
                 <li :class="route.name === 'about' ? 'navbarItemActive' : ''">
@@ -30,5 +32,5 @@ icon.value = '/favicon.ico';
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
 </template>

@@ -13,16 +13,12 @@ export default defineEventHandler(async (event) => {
     // }));
 
     // NOTE: I LIMITED THIS TO 1K RECORDS B/C THE DATA HAS MISSING ELEMENTS HIGHER IN THE ID RANGE
-    const res = await axios.get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1000');
+    const resp = await axios.get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1000');
 
-    const list = new Array();
-    res.data.results.forEach((item: { url: string; name: string; }, index: number) => {
-        const split = item.url.split('/');
-        const pId = split[split.length - 2];
-        list.push({
-            name: capitalizer(item.name),
-            id: pId,
-        });
-    });
+    const list = resp.data.results.map(({ url, name }: { url: string; name: string; }) => ({
+        name: capitalizer(name),
+        id: url.split('/').at(-2),
+    }));
+
     return list;
 });

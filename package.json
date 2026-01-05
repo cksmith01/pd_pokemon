@@ -15,10 +15,18 @@
     "@nuxt/icon": "^2.1.1",
     "@nuxt/image": "^2.0.0",
     "@nuxtjs/axios": "^5.13.6",
+    "@primeuix/themes": "^2.0.2",
     "axios": "^1.13.2",
     "better-sqlite3": "^12.5.0",
+    "date-fns": "^4.1.0",
+    "drizzle-orm": "^0.45.1",
     "eslint": "^9.39.2",
     "nuxt": "^4.2.2",
-    "primeicons": "^7.0.0"
+    "primeicons": "^7.0.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "drizzle-kit": "^0.31.8"
   }
 }

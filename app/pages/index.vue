@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
+
 import { ref, computed } from 'vue';
 
 const search = ref('');
@@ -12,10 +14,16 @@ const filtered = computed(() =>
         p.name.toLowerCase().startsWith(search.value.toLowerCase())
     )
 );
+
+onMounted(() => {
+    document.title = 'PD Pokemon v1';
+});
+
+
 </script>
 
 <template>
-    <div>
+    <div class="clear-both">
         <div class="w-50 float-left">
             <h3 class="text-right pr-5">Pokemon List</h3>
         </div>

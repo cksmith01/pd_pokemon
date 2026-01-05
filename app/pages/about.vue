@@ -8,10 +8,9 @@
         <div class="todo">
             <h3>To Do:</h3>
             <ul>
-                <li>add some other properties to display on the detail page</li>
+                <li>hook it up to sqlite</li>
+                <li>create a page to display the click rates</li>
                 <li>make the whole card clickable</li>
-                <li>what about a different page that uses PrimeVue grid and modal to display the data</li>
-                <li>are there any other properties you'd like display</li>
             </ul>
         </div>
         <br> <br>

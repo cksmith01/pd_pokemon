@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1767577115653,
+      "tag": "0000_steep_wild_child",
+      "breakpoints": true
+    }
+  ]
+}
