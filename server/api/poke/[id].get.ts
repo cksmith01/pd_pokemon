@@ -17,8 +17,7 @@ export default defineEventHandler(async (event) => {
         pokeName: data.name,
     };
 
-    //console.log('???', clickTrack); // wip
-
+    // NOTE: not sure this is the best place to do it but it's an easy spot to track requests
     await useDrizzle().insert(clickTable).values(clickTrack);
 
     return data;

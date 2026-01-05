@@ -1,9 +1,8 @@
 <script setup>
 import { useRoute } from 'vue-router';
-
 const route = useRoute();
-
 </script>
+
 <template>
     <header class="navbar">
         <div class="logo">
@@ -18,10 +17,10 @@ const route = useRoute();
                         Home
                     </NuxtLink>
                 </li>
-                <li :class="route.name === 'prime' ? 'navbarItemActive' : ''">
-                    <NuxtLink :to="{ name: 'prime' }">
-                        <i class="pi pi-table"></i>
-                        Prime
+                <li :class="route.name === 'clicks' ? 'navbarItemActive' : ''">
+                    <NuxtLink :to="{ name: 'clicks' }">
+                        <i class="pi pi-question-circle"></i>
+                        Clicks
                     </NuxtLink>
                 </li>
                 <li :class="route.name === 'about' ? 'navbarItemActive' : ''">

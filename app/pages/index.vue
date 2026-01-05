@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
-
 import { ref, computed } from 'vue';
 
 const search = ref('');
@@ -16,9 +15,8 @@ const filtered = computed(() =>
 );
 
 onMounted(() => {
-    document.title = 'PD Pokemon v1';
+    document.title = 'PD Pokemon';
 });
-
 
 </script>
 
@@ -29,7 +27,6 @@ onMounted(() => {
         </div>
         <div class="w-50 float-left">
             <input v-model="search" id="searchField" type="text" placeholder="Filter items by name..." />
-
         </div>
     </div>
     <div v-if="status === 'pending'" class="loader"></div>
